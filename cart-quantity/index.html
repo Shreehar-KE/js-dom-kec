@@ -5,38 +5,39 @@
 </head>
 <body>
     <button onclick="
-        console.log(`Cart: ${cartQuantity}`);
+        displayQuantity();
     ">
         View Quantity
     </button>
     <button onclick="
-        cartQuantity = cartQuantity + 1;
-        console.log(`Cart: ${cartQuantity}`);
+        // cartQuantity = cartQuantity + 1;
+        updateQuantity(1);
+        displayQuantity();
     ">
         +1
     </button>
     <button onclick="
-        cartQuantity = cartQuantity + 2;
-        console.log(`Cart: ${cartQuantity}`);
+        // cartQuantity = cartQuantity + 2;
+        updateQuantity(2);
+        displayQuantity();
     ">
         +2
     </button>
     <button onclick="
-        cartQuantity = cartQuantity + 3;
-        console.log(`Cart: ${cartQuantity}`);
+        // cartQuantity = cartQuantity + 3;
+        updateQuantity(3);
+        displayQuantity();
+        
     ">
         +3
     </button>
     <button onclick="
-        console.log('The cart has been reset.')
-        cartQuantity = 0;
-        console.log(`Cart: ${cartQuantity}`);
+        resetCart();
+        displayQuantity();
     ">
         Reset cart
     </button>
 
-    <script>
-        let cartQuantity = 0;
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
