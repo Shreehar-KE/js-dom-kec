@@ -22,3 +22,16 @@ console.log(typeof stringJSON);
 let normalJSON = JSON.parse(stringJSON);
 console.log(normalJSON);
 console.log(typeof normalJSON);
+
+
+// localStorage
+localStorage.setItem("username", "John Doe");
+let item = localStorage.getItem("username");
+console.log(item);
+
+localStorage.removeItem("username");
+let item2 = localStorage.getItem("username");
+console.log(item2);
+
+// sessionStorage
+sessionStorage.setItem("username", "John Doe");
